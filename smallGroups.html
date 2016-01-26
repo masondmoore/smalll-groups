@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/norm.css">
         <link rel="stylesheet" type = "text/css" href="css/smallgroups.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     </head>
     <div class="banner-1">
       <div class="container">
@@ -13,14 +14,38 @@
       <a href="http://designshack.net/" class="button">Watch</a>
     </div>
     </div>
+    <script>
+    // Pastor David taught Jquery here
+    // underscore for Jquery
+    //figure out an comparions operator
+    $(document).ready(function(){
+      //these top three are just examples
+      var greeting = 'Hello Mason!'; //string
+      var number_of_students = 2; //integer
+      var do_not_disturb_mode_enabled = true; //Boolean
+
+      var directory_open = 0;
+      var semester_state = "active";
+
+      if (semester_state){
+          $('.directory-status h2 span').html("Open!");
+      } else{
+        $('.directory-status h2 span').html("Closed.");
+
+      }
+      console.log(greeting);
+    });
+    </script>
     <div class="banner-2">
-      <div class="container-2">
-        <h2> Directory Opens in 12 Days!</h2>
-        <h4> WINTER/SPRING SEMESTER</h4>
-        <h3> January 31 - April 30 </h3>
+      <div class="container-2 directory-status">
+        <h2> Directory is <span> Not open.</span></h2>
+        <h4 class"semseter title"> Next Semester</h4>
+        <h3 class="semester-dates"> Dates coming soon!</h3>
       </div>
-               <a href="" class="button-2">Register a New Small Group  > </a>
+        <div class="feature-link">
+               <a href="" class="button-2 btn-simple">Learn More </a>
                <a href="" class="button-3">Leader Sign In </a>
+        </div>
     </div>
     <div class="body-1">
     <body>
@@ -35,13 +60,22 @@
           <a href="" class="button-5">Register a New Small Group</a>
   </div>
   <div class="leader-1">
+    <div class="container">
     <h1> LEADERSHIP TRAINING DATA</h2>
-      <p> Jan 10, 17, 24, & 31
-        11:00am at every campus</p>
-      <p> Jan 10 & 17
-        6:00am at Grants Mill Campus</p>
-      <p> Jan 24
-        Growth Track at every Campus</p>
+      <div class="date">
+        <div class="date-1">
+        <p> Jan 10, 17, 24, & 31</p>
+        <p>  11:00am at every campus</p>
+        </div>
+        <div class="date-2">
+        <p> Jan 10 & 17</p>
+        <p>  6:00am at Grants Mill Campus</p>
+        </div>
+          <div class="date-3">
+        <p> Jan 24</p>
+        <p>  Growth Track at every Campus</p>
+      </div>
+    </div>
   </div>
   <div class="leader-2">
     <div class="small-leader">

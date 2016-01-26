@@ -4,6 +4,7 @@
 }
 .banner-1{
 	background-image: url(../images/bg-community.jpg);
+	background-repeat: no-repeat;
 	padding: 100px;
 }
 .button{
@@ -80,7 +81,6 @@ h1{
 text-align: center;
 display: inline-block;
 max-width: 380px;
-margin-left: 300px;
 background-image: url(../images/leadership-development.jpg);
 background-repeat: no-repeat;
 padding-bottom: 25px;
@@ -110,4 +110,19 @@ padding-bottom: 25px;
 }
 .leader-2{
 	padding-bottom: 150px;
+}
+.date-1{
+	max-width: 322px;
+	display: inline-block;
+	margin: 50px;
+}
+.date-2{
+	max-width: 322px;
+	display: inline-block;
+	margin: 50px;
+}
+.date-3{
+	max-width: 322px;
+	display: inline-block;
+	margin: 50px;
 }
