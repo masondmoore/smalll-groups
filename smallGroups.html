@@ -24,23 +24,29 @@
       var number_of_students = 2; //integer
       var do_not_disturb_mode_enabled = true; //Boolean
 
-      var directory_open = 0;
-      var semester_state = "active";
+      var directory_open = 1;
+      var semester_state = 1;
 
-      if (semester_state){
-          $('.directory-status h2 span').html("Open!");
-      } else{
-        $('.directory-status h2 span').html("Closed.");
-
-      }
-      console.log(greeting);
+          if (directory_open) {
+            $('.directory-status h2 span').html("Open!");
+          } else {
+            $('.directory-status h2 span').html("Closed.");
+          }
+            if (semester_state) {
+              $('h4.semester-title').html("Winter/Spring Semester");
+              $('h3.semester-dates').html("January 31 - April 30");
+            } else {
+              $('h3.semester-dates').html("Dates coming soon!");
+            }
+    //bonus points?
+      //console.log(greeting);
     });
     </script>
     <div class="banner-2">
       <div class="container-2 directory-status">
         <h2> Directory is <span> Not open.</span></h2>
-        <h4 class"semseter title"> Next Semester</h4>
-        <h3 class="semester-dates"> Dates coming soon!</h3>
+        <h4 class"semester-title">Next Semester</h4>
+        <h3 class="semester-dates">Dates coming soon!</h3>
       </div>
         <div class="feature-link">
                <a href="" class="button-2 btn-simple">Learn More </a>
